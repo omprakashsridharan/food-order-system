@@ -4,53 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d92c36ab-0135-4431-be11-783235e36c66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/entity/AggregateRoot.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/entity/BaseEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/event/DomainEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/exception/DomainException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/exception/OrderDomainException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/valueobject/BaseId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/valueobject/CustomerId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/valueobject/Money.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/valueobject/OrderId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/valueobject/OrderStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/valueobject/ProductId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/valueobject/RestaurantId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-application/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-container/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/OrderDomainService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/OrderDomainServiceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/entity/Customer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/entity/Order.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/entity/OrderItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/entity/Product.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/entity/Restaurant.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/event/OrderCancelledEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/event/OrderCreatedEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/event/OrderEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/event/OrderPaidEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/valueobject/OrderItemId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/valueobject/StreetAddress.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/kotlin/com/food/ordering/system/order/service/domain/valueobject/TrackingId.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    <list default="true" id="d92c36ab-0135-4431-be11-783235e36c66" name="Changes" comment="Adds order-domain-core impl">
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/kotlin/com/food/ordering/system/domain/valueobject/PaymentStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/dto/create/CreateOrderCommand.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/dto/create/CreateOrderResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/dto/create/OrderAddress.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/dto/create/OrderItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/dto/message/PaymentResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/dto/track/TrackOrderQuery.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/dto/track/TrackOrderResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +105,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/common/common-domain" />
     </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.food.ordering.system.order.service.domain.dto.create" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.food.ordering.system.order.service.domain.dto.track" />
       <recent name="com.food.ordering.system.order.service.domain.event" />
       <recent name="com.food.ordering.system.domain.valueobject" />
     </key>
@@ -194,6 +162,14 @@
       <option name="presentableId" value="Default" />
       <updated>1672505483076</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adds order-domain-core impl">
+      <created>1672587839527</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672587839527</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,5 +182,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adds order-domain-core impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds order-domain-core impl" />
   </component>
 </project>
