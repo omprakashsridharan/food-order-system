@@ -7,6 +7,6 @@ import java.util.*
 data class CreateOrderResponse(
     @NotNull val orderTrackingId: UUID,
     @NotNull val orderStatus: OrderStatus,
-    @NotNull val message: String
+    @NotNull val message: String = ""
 ) {
 }

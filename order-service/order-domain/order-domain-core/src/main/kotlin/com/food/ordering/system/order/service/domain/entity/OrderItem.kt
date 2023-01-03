@@ -6,8 +6,8 @@ import com.food.ordering.system.domain.valueobject.OrderId
 import com.food.ordering.system.order.service.domain.valueobject.OrderItemId
 
 class OrderItem(
-    id: OrderItemId,
-    val orderId: OrderId,
+    val id: OrderItemId,
+    val orderId: OrderId? = null,
     val product: Product,
     val quantity: Int,
     val price: Money,

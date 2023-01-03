@@ -14,8 +14,8 @@ class Order(
     val streetAddress: StreetAddress,
     val price: Money,
     val items: List<OrderItem>,
-    var trackingId: TrackingId,
-    var orderStatus: OrderStatus,
+    var trackingId: TrackingId = TrackingId(UUID.randomUUID()),
+    var orderStatus: OrderStatus = OrderStatus.PENDING,
     var failureMessages: MutableList<String> = mutableListOf()
 ) :
     AggregateRoot<OrderId>(orderId) {
