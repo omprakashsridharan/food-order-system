@@ -70,8 +70,8 @@ class OrderDataMapper {
         )
     }
 
-    fun orderToCreateOrderResponse(order: Order): CreateOrderResponse {
-        return CreateOrderResponse(orderTrackingId = order.trackingId.value, orderStatus = order.orderStatus)
+    fun orderToCreateOrderResponse(order: Order, message: String): CreateOrderResponse {
+        return CreateOrderResponse(orderTrackingId = order.trackingId.value, orderStatus = order.orderStatus, message = message)
     }
 
     fun orderToTrackOrderResponse(order: Order): TrackOrderResponse {

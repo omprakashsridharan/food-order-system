@@ -20,7 +20,7 @@ class OrderCreateCommandHandler(
     fun createOrder(createOrderCommand: CreateOrderCommand): CreateOrderResponse {
         val orderCreatedEvent = orderCreateHelper.persistOrder(createOrderCommand)
         orderCreatedPaymentRequestMessagePublisher.publish(orderCreatedEvent)
-        return orderDataMapper.orderToCreateOrderResponse(orderCreatedEvent.order)
+        return orderDataMapper.orderToCreateOrderResponse(orderCreatedEvent.order, "order created successfully")
     }
 
 }
