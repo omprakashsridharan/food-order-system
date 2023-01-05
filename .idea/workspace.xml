@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d92c36ab-0135-4431-be11-783235e36c66" name="Changes" comment="Order domain impl complete">
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/kotlin/com/food/ordering/system/order/service/domain/OrderApplicationServiceImplTest.kt" afterDir="false" />
+    <list default="true" id="d92c36ab-0135-4431-be11-783235e36c66" name="Changes" comment="Adds base test setup">
+      <change afterPath="$PROJECT_DIR$/infrastructure/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/common.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/init_kafka.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/kafka-cluster.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/zookeeper.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/kotlin/com/food/ordering/system/kafka/config/data/KafkaConfigData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/kotlin/com/food/ordering/system/kafka/config/data/KafkaConsumerConfigData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/kotlin/com/food/ordering/system/kafka/config/data/KafkaProducerConfigData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/OrderCreateCommandHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/OrderCreateCommandHandler.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/kotlin/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +70,8 @@
         <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -96,7 +106,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_directory_selection": "/Users/omprakashsridharan/Documents/Personal/food-ordering-system/order-service/order-domain/order-application-service/src/test/kotlin",
-    "last_opened_file_path": "/Users/omprakashsridharan/Documents/Personal/food-ordering-system/common",
+    "last_opened_file_path": "/Users/omprakashsridharan/Documents/Personal/food-ordering-system/infrastructure",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -104,13 +114,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/common" />
-      <recent name="$PROJECT_DIR$/order-service/order-messaging" />
-      <recent name="$PROJECT_DIR$/order-service/order-container" />
-      <recent name="$PROJECT_DIR$/order-service/order-application" />
-      <recent name="$PROJECT_DIR$/order-service/order-data-access" />
+      <recent name="$PROJECT_DIR$/infrastructure" />
+      <recent name="$PROJECT_DIR$/infrastructure/kafka/kafka-producer" />
+      <recent name="$PROJECT_DIR$/infrastructure/kafka/kafka-model" />
+      <recent name="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer" />
+      <recent name="$PROJECT_DIR$/infrastructure/kafka" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data" />
+      <recent name="$PROJECT_DIR$/infrastructure/docker-compose/volumes/zookeeper" />
       <recent name="$PROJECT_DIR$/common/common-domain" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -197,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672760422694</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adds base test setup">
+      <created>1672853816519</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672853816519</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +234,7 @@
     <MESSAGE value="Adds order-domain-core impl" />
     <MESSAGE value="Adds DTO packages" />
     <MESSAGE value="Adds command handlers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds command handlers" />
+    <MESSAGE value="Adds base test setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds base test setup" />
   </component>
 </project>

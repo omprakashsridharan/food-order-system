@@ -8,5 +8,10 @@ include(
     "order-service:order-application",
     "order-service:order-container",
     "order-service:order-messaging",
-    "common:common-domain"
+    "common:common-domain",
+    "infrastructure:kafka:kafka-producer",
+    "infrastructure:kafka:kafka-consumer",
+    "infrastructure:kafka:kafka-model",
+    "infrastructure:kafka:kafka-config-data",
+    "infrastructure"
 )
